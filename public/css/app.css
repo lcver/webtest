@@ -72,9 +72,17 @@ header .logo img {
     right: 0;
 }
 
-/* .menu-footer li a{
-    font-size: 12px;
-} */
+.menu-footer {
+    /* position: relative; */
+    margin-top: 100px;
+}
+.menu-footer li {
+    display: inline-block;
+}
+
+.menu-footer li a{
+    font-size: 24px;
+}
 
 header.active {
     background-color: #000;

@@ -35,6 +35,11 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Our Product</a></li>
         <li><a href="#">Contact Us</a></li>
+        <ul class="menu-footer">
+            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-youtube"></i></a></li>
+        </ul>
     </ul>
 </header>
   @yield('content')
