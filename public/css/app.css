@@ -160,7 +160,17 @@ header.active {
 .banner-image {
     background-color: black;
     overflow: hidden;
+    position: relative;
     /* height: 80vh; */
+}
+
+.banner-image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.3);
+    z-index: 1;
 }
 
 .banner-image img {
@@ -182,6 +192,7 @@ header.active {
     height: 500px;
     padding-top: 20px;
     position: relative;
+    z-index: 2;
 }
 
 .layout-1::before {
@@ -241,6 +252,7 @@ header.active {
     width: 500px;
     bottom: 50px;
 }
+
 .owl-dots .owl-dot {
     border: 2px solid #C1742B !important;
     height: 20px !important;
@@ -349,6 +361,8 @@ header.active {
 
 .layout-2 .card {
     border: none;
+    padding: 0;
+    background-color: transparent;
     /* max-height: 300px; */
 }
 /* Layout 2 Thumbnail - END */
@@ -361,6 +375,8 @@ header.active {
 
 .layout-3 .card {
     border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
 .layout-3 .card-image img {
@@ -550,6 +566,26 @@ footer {
 
 /* tablet lanscape up */
 @media (max-width: 900px) {
+    .banner-image img {
+        width: 100%;
+        transform: skewy(0deg);
+    }
+    
+    .layout-1 {
+        height: 650px;
+    }
+    
+    .layout-1::before {
+        height: 670px;
+    }
+
+    .card {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
     .card-image img {
         height: 350px;
         max-height: 500px;
@@ -561,6 +597,51 @@ footer {
     }
     .caption-thumbnail h5 {
         font-size: 25px;
+    }
+
+    .owl-item {
+        align-items: center;
+        /* background-color: blue; */
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    
+    .owl-item img {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .owl-dots {
+        /* background-color: cyan; */
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .owl-dots .owl-dot {
+        border: 2px solid #fff !important;
+    }
+    
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: rgba(255,255,255);
+    }
+    
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: transparent;
+    }
+    
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: rgba(255,255,255, 0,1);
+    }
+    
+    .owl-theme .owl-dots .owl-dot.active:hover span{
+        background-color: rgba(255,255,255);
+    }
+    
+    .owl-theme .owl-dots .owl-dot span:active {
+        background-color: rgba(255,255,255, 0.2);
     }
 }
 

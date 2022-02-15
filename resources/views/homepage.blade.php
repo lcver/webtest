@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="layout-2">
+    <div class="layout-2 pb-4">
         <div class="container">
             <div class="card col-md-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                 <div class="card-image">
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <div class="layout-3 pt-4 pb-4">
+    <div class="layout-3 pb-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
