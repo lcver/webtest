@@ -49,7 +49,7 @@
     </div>
     <div class="layout-2">
         <div class="container">
-            <div class="card col-md-12">
+            <div class="card col-md-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                 <div class="card-image">
                     <img class="card-img-top rounded" src="{{asset('storage/assets/images/thumb/the-process.png')}}" alt="Card image">
                 </div>
@@ -65,7 +65,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-up">
                         <div class="card-image">
                             <img class="card-img-top rounded" src="{{asset('storage/assets/images/thumb/the-journey.png')}}" alt="Card image">
                         </div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-up">
                         <div class="card-image">
                             <img class="card-img-top rounded" src="{{asset('storage/assets/images/thumb/the-philosophy.png')}}" alt="Card image">
                         </div>
