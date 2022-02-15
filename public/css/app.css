@@ -425,3 +425,69 @@ footer {
     display: inline-block;
 }
 /* Footer - END */
+
+
+/* phone only */
+@media (max-width: 599px) {
+    body {
+        /* display: none; */
+    }
+
+    .layout-1 {
+        /* background-color: blue; */
+        /* display: none; */
+    }
+    .carousel-indicators {
+        /* background-color: green; */
+        /* position: relative; */
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+    }
+
+    .layout-2 {
+        /* display: none; */
+    }
+
+    .caption-thumbnail {
+        /* background-color: red; */
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .layout-3 {
+        /* display: none; */
+    }
+
+    .footer-2 .section-4{
+        /* background-color: cyan; */
+        /* padding-top: 20px; */
+        border-top: 1px solid rgba(0,0,0, 0.5);
+    }
+}
+
+/* Tablet potrait up */
+@media (max-width: 600px) {}
+
+/* tablet lanscape up */
+@media (max-width: 900px) {
+    .card-image img {
+        height: 350px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .caption-thumbnail p {
+        font-size: 15px;
+    }
+    .caption-thumbnail h5 {
+        font-size: 25px;
+    }
+}
+
+/* desktop up */
+@media (max-width: 1200px) {}
+
+/* big desktop up */
+@media (max-width: 1800px) {}
