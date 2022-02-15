@@ -175,13 +175,14 @@ header.active {
 .layout-1 {
     background-color: #C42017;
     width: 100%;
-    height: 450px;
+    height: 500px;
+    padding-top: 20px;
     position: relative;
 }
 .layout-1::before {
     content: "";
     position: absolute;
-    height: 400px;
+    height: 450px;
     width: 100%;
     /* transform: rotate(-5deg); */
     transform: skewY(-5deg);
@@ -192,7 +193,13 @@ header.active {
     overflow: hidden;
 }
 
+.carousel-inner {
+    /* background-color: salmon; */
+    position: relative;
+}
+
 .carousel-item {
+    position: relative;
     /* background-color: cyan; */
 }
 
@@ -206,12 +213,18 @@ header.active {
     position: relative !important;
     width: 500px;
     /* background-color: blue; */
-    float: left;
+    left: 0;
+    /* justify-content: center; */
+    top: 100px;
+    /* float: left; */
 }
 
 .carousel-indicators {
-    /* position: initial; */
     /* background-color: green; */
+    /* position: relative; */
+    width: 500px;
+    margin: 0;
+    bottom: 100px;
 }
 .carousel-indicators button {
     
@@ -400,33 +413,3 @@ footer {
 .footer-3 .footer-sosmed li {
     display: inline-block;
 }
-
-/* For Desktop View */
-@media screen and (min-width: 1024px) {}
-
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-and (max-device-width: 1024px) {}
-
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-and (orientation: landscape) {}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px)
-and (-webkit-min-device-pixel-ratio: 3) {}
