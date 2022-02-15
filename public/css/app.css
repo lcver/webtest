@@ -468,7 +468,11 @@ footer {
 }
 
 /* Tablet potrait up */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .banner-image {
+        height: 310px;
+    }
+}
 
 /* tablet lanscape up */
 @media (max-width: 900px) {
