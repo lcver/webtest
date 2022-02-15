@@ -13,15 +13,17 @@
             <div id="custom-owl-carousel" class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
+                        @foreach($content as $slider)
                         <div class="owl-item">
                             <div class="owl-text">
-                                <p>The Product</p>
-                                <h5>Premium Coffee Beans</h5>
-                                <p>Our selected premium coffee beans, freshly picked from the volcanic soils.</p>
+                                <p>{{$slider->subtitle}}</p>
+                                <h5>{{$slider->title}}</h5>
+                                <p>{{$slider->description}}</p>
                             </div>
-                            <img src="{{asset('storage/assets/images/thumb/coffee-candy.png')}}" alt="...">
+                            <img src="{{asset('storage/assets/images/'. $slider->content_type .'/' . $slider->image)}}" alt="...">
                         </div>
-                        <div class="owl-item">
+                        @endforeach
+                        {{-- <div class="owl-item">
                             <div class="owl-text">
                                 <p>The Product</p>
                                 <h5>Second slide label</h5>
@@ -36,7 +38,7 @@
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                             <img src="{{asset('storage/assets/images/thumb/coffee-candy.png')}}" alt="...">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div id="custom-owl-dots" class="owl-dots">
