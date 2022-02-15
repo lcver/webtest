@@ -2,20 +2,22 @@ console.log("=== Javascript file ===")
 
 
 $(document).ready(() => {
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
+    var owl = $("#custom-owl-carousel").owlCarousel({
+        slideSpeed : 100,
+        paginationSpeed : 100,
+   
+        items : 1, 
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false,
+
+        dotsContainer: "#custom-owl-dots"
+   
+    });
+    $('.owl-dot').click(function () {
+        owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+        console.log("test");
     });
 })
+

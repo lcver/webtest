@@ -10,19 +10,36 @@
     <div class="layout-1">
         <div class="container">
             <!-- Set up your HTML -->
-            <div class="owl-carousel owl-theme owl-loaded">
+            <div id="custom-owl-carousel" class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
-                        <div class="owl-item">...</div>
-                        <div class="owl-item">...</div>
-                        <div class="owl-item">...</div>
+                        <div class="owl-item">
+                            <div class="owl-text">
+                                <p>The Product</p>
+                                <h5>Premium Coffee Beans</h5>
+                                <p>Our selected premium coffee beans, freshly picked from the volcanic soils.</p>
+                            </div>
+                            <img src="{{asset('storage/assets/images/thumb/coffee-candy.png')}}" alt="...">
+                        </div>
+                        <div class="owl-item">
+                            <div class="owl-text">
+                                <p>The Product</p>
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                            <img src="{{asset('storage/assets/images/thumb/coffee-candy.png')}}" alt="...">
+                        </div>
+                        <div class="owl-item">
+                            <div class="owl-text">
+                                <p>The Product</p>
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                            <img src="{{asset('storage/assets/images/thumb/coffee-candy.png')}}" alt="...">
+                        </div>
                     </div>
                 </div>
-                <div class="owl-nav">
-                    <div class="owl-prev">prev</div>
-                    <div class="owl-next">next</div>
-                </div>
-                <div class="owl-dots">
+                <div id="custom-owl-dots" class="owl-dots">
                     <div class="owl-dot active"><span></span></div>
                     <div class="owl-dot"><span></span></div>
                     <div class="owl-dot"><span></span></div>
