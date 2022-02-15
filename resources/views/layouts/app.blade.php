@@ -11,6 +11,9 @@
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> --}}
     {{-- Fontawesome Icon --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- Owl Carousel --}}
+    <link rel="stylesheet" href="{{ asset('storage/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') }}">
     {{-- AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- Style --}}
@@ -59,8 +62,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {{-- BOOTSTRAP --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  {{-- Owl Carousel --}}
+  <script src="{{ asset('storage/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
   {{-- AOS --}}
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  {{-- Javascript --}}
+  <script src="{{asset('js/app.js')}}"></script>
   <script>
     AOS.init();
   </script>
